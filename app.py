@@ -1,15 +1,30 @@
 import streamlit as st
 from pathlib import Path
 
-# Import from your modular architecture
+# Import from modular architecture
 from utils.resume import extract_text_from_pdf
 from models.ChatGroq import get_chatgroq
 from chains.resume_analysis import analyze_resume
 from chains.job_role_info_chain import job_role_info_chain
+from chains.suggestion_chain import generate_suggestions
 
-# Streamlit Configuration
-st.set_page_config(page_title="SkillSync", page_icon="🧠", layout="centered")
+# ----------------------------
+# Streamlit Page Configuration
+# ----------------------------
+st.set_page_config(page_title="SkillSync", layout="centered")
 st.title("SkillSync — Smart Interview Prep & Career Planning Assistant")
+
+# ----------------------------
+# Initialize Session State
+# ----------------------------
+if "resume_done" not in st.session_state:
+    st.session_state.resume_done = False
+if "jobrole_done" not in st.session_state:
+    st.session_state.jobrole_done = False
+if "resume_skills" not in st.session_state:
+    st.session_state.resume_skills = []
+if "required_skills" not in st.session_state:
+    st.session_state.required_skills = []
 
 # ----------------------------
 # Step 1: Upload Resume
@@ -38,9 +53,22 @@ if uploaded_resume:
         if not resume_text.strip():
             st.warning("Please upload a valid resume first.")
         else:
-            with st.spinner("Analyzing your resume..."):
-                 result = analyze_resume(resume_text)
+            with st.spinner("🔍 Analyzing your resume for key skills..."):
+                result = analyze_resume(resume_text)
             st.markdown(result)
+
+            # 🔹 Extract skills from result (if available)
+            if isinstance(result, dict) and "skills" in result:
+                resume_skills = result["skills"]
+                st.success(f"Extracted {len(resume_skills)} skills from your resume:")
+                st.markdown("\n".join([f"• {s}" for s in resume_skills]))
+            else:
+                resume_skills = []
+                st.info("Could not detect specific skills. You can manually input them if needed.")
+
+            # Mark step complete
+            st.session_state.resume_done = True
+            st.session_state.resume_skills = resume_skills
 
 # ----------------------------
 # Step 2: Job Role Exploration
@@ -53,8 +81,8 @@ if st.button("Analyze Job Role"):
     if not job_role.strip():
         st.warning("Please enter a job role first.")
     else:
-        with st.spinner("Gathering Wikipedia, Neo4j, and LinkedIn insights..."):
-             info = job_role_info_chain(job_role)
+        with st.spinner("Gathering job insights from Wikipedia, Neo4j, and LinkedIn..."):
+            info = job_role_info_chain(job_role)
 
         if "error" in info:
             st.error(info["error"])
@@ -64,7 +92,7 @@ if st.button("Analyze Job Role"):
 
             all_skills = []
 
-            # Collect from different data sources if available
+            # Collect from various sources
             if info.get("skills_found"):
                 all_skills.extend(info["skills_found"])
             if info.get("neo4j_skills"):
@@ -72,24 +100,57 @@ if st.button("Analyze Job Role"):
             if info.get("linkedin_skills"):
                 all_skills.extend(info["linkedin_skills"])
 
-            # Remove duplicates (case-insensitive)
-            all_skills = sorted(set([s.strip().title() for s in all_skills if s.strip()]))
+            # Remove duplicates and normalize names
+            required_skills = sorted(set([s.strip().title() for s in all_skills if s.strip()]))
 
-            # Display skills neatly
-            if all_skills:
-                st.markdown("### 🧩 Key Skills Extracted from All Sources")
-                st.markdown("\n".join([f"• {skill}" for skill in all_skills]))
+            if required_skills:
+                st.markdown("### Key Skills Required for this Role")
+                st.markdown("\n".join([f"• {s}" for s in required_skills]))
             else:
                 st.warning("No specific skills found from any source.")
 
-            # 🔗 Wikipedia link
             if info.get("wiki_url"):
                 st.markdown(f"[🔗 View full article on Wikipedia]({info['wiki_url']})")
 
+            #  Mark step complete
+            st.session_state.jobrole_done = True
+            st.session_state.required_skills = required_skills
+
 # ----------------------------
-# Step 3: Start Quiz
+# Step 3: Personalized Suggestions
 # ----------------------------
-st.header("Step 3: Start Your Quiz")
+st.header("Step 3: Personalized Resume Suggestions")
+
+if st.session_state.resume_done and st.session_state.jobrole_done:
+    resume_skills = st.session_state.resume_skills
+    required_skills = st.session_state.required_skills
+    job_role = job_role or "Your Selected Role"
+
+    # 🔹 Calculate missing skills
+    missing_skills = [s for s in required_skills if s not in [r.title() for r in resume_skills]]
+    match_score = 1 - (len(missing_skills) / len(required_skills)) if required_skills else 0
+
+    st.success("Both resume and job role analysis are complete!")
+    st.write(f"**Match Score:** {round(match_score * 100, 1)}%")
+    st.markdown("**Missing Skills:** " + (", ".join(missing_skills) if missing_skills else "None 🎉"))
+
+    with st.spinner("Generating personalized improvement suggestions..."):
+        suggestions = generate_suggestions(
+            job_role=job_role,
+            required_skills=required_skills,
+            resume_skills=resume_skills,
+            missing_skills=missing_skills,
+            match_score=match_score
+        )
+        st.markdown(suggestions)
+
+else:
+    st.info("⬆Please complete **Step 1 (Resume Analysis)** and **Step 2 (Job Role Analysis)** first.")
+
+# ----------------------------
+# Step 4: Start Quiz
+# ----------------------------
+st.header("Step 4: Start Your Quiz")
 
 st.markdown(
     """
