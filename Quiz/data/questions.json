@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "question": "Which algorithm is commonly used for classification tasks in supervised learning?",
+      "options": [
+        "K-Nearest Neighbors",
+        "Principal Component Analysis",
+        "K-Means Clustering",
+        "Linear Regression"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the term 'overfitting' refer to in machine learning?",
+      "options": [
+        "When a model performs well on training data but poorly on unseen data",
+        "When a model performs poorly on both training and test data",
+        "When a model has too few parameters",
+        "When a model is trained for too long on a small dataset"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a deep learning framework?",
+      "options": [
+        "Scikit-learn",
+        "TensorFlow",
+        "Pandas",
+        "NumPy"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the primary purpose of a loss function in training neural networks?",
+      "options": [
+        "To measure the difference between predicted and actual outputs",
+        "To initialize weights randomly",
+        "To determine the learning rate",
+        "To evaluate model accuracy on the test set"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which technique is used to reduce the dimensionality of data while preserving variance?",
+      "options": [
+        "t-SNE",
+        "K-Means",
+        "PCA",
+        "Random Forest"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is an unsupervised learning algorithm?",
+      "options": [
+        "Support Vector Machine",
+        "Decision Tree",
+        "K-Means Clustering",
+        "Logistic Regression"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does the acronym 'GAN' stand for in machine learning?",
+      "options": [
+        "Generative Adversarial Network",
+        "Gradient Ascent Network",
+        "Generalized Autoencoder Network",
+        "Graph Attention Network"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which metric is most appropriate for evaluating a binary classification model with imbalanced classes?",
+      "options": [
+        "Accuracy",
+        "Precision",
+        "Recall",
+        "F1-Score"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a reinforcement learning concept?",
+      "options": [
+        "Batch Gradient Descent",
+        "Policy Gradient",
+        "Cross-Validation",
+        "Dropout"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Who is credited with coining the term 'Artificial Intelligence' in 1956?",
+      "options": [
+        "Alan Turing",
+        "John McCarthy",
+        "Marvin Minsky",
+        "Claude Shannon"
+      ],
+      "correctOption": 1,
+      "points": 10
+    }
+  ]
+}

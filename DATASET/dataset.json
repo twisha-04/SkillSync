@@ -1,0 +1,323 @@
+[
+  {
+    "job_role": "Frontend Developer",
+    "it_skills": [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Webpack"
+    ],
+    "soft_skills": [
+      "Teamwork",
+      "Communication",
+      "Problem-solving"
+    ]
+  },
+  {
+    "job_role": "Backend Developer",
+    "it_skills": [
+      "Node.js",
+      "Python",
+      "Java",
+      "SQL",
+      "REST",
+      "Docker"
+    ],
+    "soft_skills": [
+      "Analytical thinking",
+      "Time management",
+      "Adaptability"
+    ]
+  },
+  {
+    "job_role": "Full Stack Developer",
+    "it_skills": [
+      "React",
+      "Node.js",
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "AWS"
+    ],
+    "soft_skills": [
+      "Collaboration",
+      "Leadership",
+      "Creativity"
+    ]
+  },
+  {
+    "job_role": "Data Scientist",
+    "it_skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Machine Learning",
+      "Data Visualization",
+      "TensorFlow"
+    ],
+    "soft_skills": [
+      "Critical thinking",
+      "Communication",
+      "Problem-solving"
+    ]
+  },
+  {
+    "job_role": "Data Engineer",
+    "it_skills": [
+      "Python",
+      "SQL",
+      "Spark",
+      "Kafka",
+      "Airflow",
+      "AWS"
+    ],
+    "soft_skills": [
+      "Attention to detail",
+      "Teamwork",
+      "Adaptability"
+    ]
+  },
+  {
+    "job_role": "DevOps Engineer",
+    "it_skills": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Jenkins",
+      "Terraform",
+      "AWS",
+      "Azure"
+    ],
+    "soft_skills": [
+      "Problem-solving",
+      "Collaboration",
+      "Time management"
+    ]
+  },
+  {
+    "job_role": "Cloud Architect",
+    "it_skills": [
+      "AWS",
+      "Azure",
+      "GCP",
+      "Terraform",
+      "Docker",
+      "Kubernetes",
+      "Security"
+    ],
+    "soft_skills": [
+      "Strategic thinking",
+      "Leadership",
+      "Communication"
+    ]
+  },
+  {
+    "job_role": "Cybersecurity Analyst",
+    "it_skills": [
+      "Penetration Testing",
+      "SIEM",
+      "Firewalls",
+      "Python",
+      "Threat Hunting",
+      "Incident Response"
+    ],
+    "soft_skills": [
+      "Attention to detail",
+      "Critical thinking",
+      "Resilience"
+    ]
+  },
+  {
+    "job_role": "AI Researcher",
+    "it_skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "NLP",
+      "Computer Vision",
+      "Reinforcement Learning"
+    ],
+    "soft_skills": [
+      "Curiosity",
+      "Problem-solving",
+      "Collaboration"
+    ]
+  },
+  {
+    "job_role": "Machine Learning Engineer",
+    "it_skills": [
+      "Python",
+      "Scikit-learn",
+      "TensorFlow",
+      "PyTorch",
+      "Docker",
+      "AWS SageMaker"
+    ],
+    "soft_skills": [
+      "Analytical thinking",
+      "Communication",
+      "Adaptability"
+    ]
+  },
+  {
+    "job_role": "Database Administrator",
+    "it_skills": [
+      "SQL",
+      "NoSQL",
+      "Oracle",
+      "MySQL",
+      "PostgreSQL",
+      "Backup & Recovery"
+    ],
+    "soft_skills": [
+      "Attention to detail",
+      "Problem-solving",
+      "Time management"
+    ]
+  },
+  {
+    "job_role": "Network Engineer",
+    "it_skills": [
+      "Cisco",
+      "Routing",
+      "Switching",
+      "BGP",
+      "VLAN",
+      "Firewall"
+    ],
+    "soft_skills": [
+      "Teamwork",
+      "Communication",
+      "Adaptability"
+    ]
+  },
+  {
+    "job_role": "UI/UX Designer",
+    "it_skills": [
+      "Sketch",
+      "Figma",
+      "Adobe XD",
+      "Prototyping",
+      "User Research",
+      "Interaction Design"
+    ],
+    "soft_skills": [
+      "Creativity",
+      "Empathy",
+      "Collaboration"
+    ]
+  },
+  {
+    "job_role": "Mobile App Developer",
+    "it_skills": [
+      "Swift",
+      "Kotlin",
+      "React Native",
+      "Flutter",
+      "Android Studio",
+      "Xcode"
+    ],
+    "soft_skills": [
+      "Problem-solving",
+      "Time management",
+      "Teamwork"
+    ]
+  },
+  {
+    "job_role": "Systems Analyst",
+    "it_skills": [
+      "Business Analysis",
+      "Process Modeling",
+      "SQL",
+      "Requirements Gathering",
+      "UML",
+      "Agile"
+    ],
+    "soft_skills": [
+      "Communication",
+      "Critical thinking",
+      "Decision making"
+    ]
+  },
+  {
+    "job_role": "IT Project Manager",
+    "it_skills": [
+      "Agile",
+      "Scrum",
+      "Kanban",
+      "Jira",
+      "MS Project",
+      "Risk Management"
+    ],
+    "soft_skills": [
+      "Leadership",
+      "Communication",
+      "Time management"
+    ]
+  },
+  {
+    "job_role": "Business Analyst",
+    "it_skills": [
+      "Requirements Gathering",
+      "Process Modeling",
+      "SQL",
+      "Data Analysis",
+      "Stakeholder Management",
+      "UML"
+    ],
+    "soft_skills": [
+      "Analytical thinking",
+      "Communication",
+      "Collaboration"
+    ]
+  },
+  {
+    "job_role": "Technical Support Specialist",
+    "it_skills": [
+      "Windows",
+      "Linux",
+      "Active Directory",
+      "Ticketing Systems",
+      "Remote Desktop",
+      "Scripting"
+    ],
+    "soft_skills": [
+      "Customer focus",
+      "Problem-solving",
+      "Empathy"
+    ]
+  },
+  {
+    "job_role": "QA Engineer",
+    "it_skills": [
+      "Selenium",
+      "JUnit",
+      "TestNG",
+      "Cypress",
+      "Postman",
+      "CI/CD"
+    ],
+    "soft_skills": [
+      "Attention to detail",
+      "Critical thinking",
+      "Teamwork"
+    ]
+  },
+  {
+    "job_role": "Scrum Master",
+    "it_skills": [
+      "Scrum",
+      "Agile",
+      "Jira",
+      "Confluence",
+      "Facilitation",
+      "Coaching"
+    ],
+    "soft_skills": [
+      "Leadership",
+      "Communication",
+      "Conflict resolution"
+    ]
+  }
+]

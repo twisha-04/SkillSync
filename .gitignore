@@ -1,0 +1,91 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.env/
+venv/
+.envrc
+.env.*
+.DS_Store
+node_modules/
+
+# -----------------------------
+# Logs & Runtime
+# -----------------------------
+*.log
+logs/
+nohup.out
+
+# -----------------------------
+# Data & Cache
+# -----------------------------
+data/*.csv
+data/*.json
+data/*.parquet
+data/cached_results/
+.cache/
+.cache/*
+*.db
+*.sqlite3
+
+# -----------------------------
+# Streamlit
+# -----------------------------
+.streamlit/secrets.toml
+.streamlit/config.toml
+.streamlit/*cache*/
+
+# -----------------------------
+# Jupyter / Colab
+# -----------------------------
+.ipynb_checkpoints/
+*.ipynb
+*.ipynb.json
+
+# -----------------------------
+# VSCode / IDEs
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------------
+# Model & Weights
+# -----------------------------
+*.pkl
+*.pt
+*.pth
+*.h5
+*.onnx
+models/
+!models/__init__.py
+
+# -----------------------------
+# Misc
+# -----------------------------
+Thumbs.db
+desktop.ini
+*.bak
+*.tmp
+
+# -----------------------------
+# Secrets / Keys
+# -----------------------------
+apikey.txt
+config.json
+.env
+.env.local
+.env.production
+.env.development
+Neo4jCredentials.txt

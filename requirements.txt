@@ -1,0 +1,13 @@
+streamlit
+pdfplumber
+bs4
+docx2txt
+langchain
+langchain_community
+langchain_groq
+neo4j
+wikipedia
+spacy
+langgraph
+ddgs
+python-dotenv

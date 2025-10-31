@@ -1,0 +1,21 @@
+job_role,it_skills/0,it_skills/1,it_skills/2,it_skills/3,it_skills/4,soft_skills/0,soft_skills/1,soft_skills/2,it_skills/5,it_skills/6
+Frontend Developer,React,JavaScript,HTML,CSS,Webpack,Teamwork,Communication,Problem-solving,,
+Backend Developer,Node.js,Python,Java,SQL,REST,Analytical thinking,Time management,Adaptability,Docker,
+Full Stack Developer,React,Node.js,Python,Docker,Kubernetes,Collaboration,Leadership,Creativity,AWS,
+Data Scientist,Python,R,SQL,Machine Learning,Data Visualization,Critical thinking,Communication,Problem-solving,TensorFlow,
+Data Engineer,Python,SQL,Spark,Kafka,Airflow,Attention to detail,Teamwork,Adaptability,AWS,
+DevOps Engineer,Docker,Kubernetes,CI/CD,Jenkins,Terraform,Problem-solving,Collaboration,Time management,AWS,Azure
+Cloud Architect,AWS,Azure,GCP,Terraform,Docker,Strategic thinking,Leadership,Communication,Kubernetes,Security
+Cybersecurity Analyst,Penetration Testing,SIEM,Firewalls,Python,Threat Hunting,Attention to detail,Critical thinking,Resilience,Incident Response,
+AI Researcher,Python,TensorFlow,PyTorch,NLP,Computer Vision,Curiosity,Problem-solving,Collaboration,Reinforcement Learning,
+Machine Learning Engineer,Python,Scikit-learn,TensorFlow,PyTorch,Docker,Analytical thinking,Communication,Adaptability,AWS SageMaker,
+Database Administrator,SQL,NoSQL,Oracle,MySQL,PostgreSQL,Attention to detail,Problem-solving,Time management,Backup & Recovery,
+Network Engineer,Cisco,Routing,Switching,BGP,VLAN,Teamwork,Communication,Adaptability,Firewall,
+UI/UX Designer,Sketch,Figma,Adobe XD,Prototyping,User Research,Creativity,Empathy,Collaboration,Interaction Design,
+Mobile App Developer,Swift,Kotlin,React Native,Flutter,Android Studio,Problem-solving,Time management,Teamwork,Xcode,
+Systems Analyst,Business Analysis,Process Modeling,SQL,Requirements Gathering,UML,Communication,Critical thinking,Decision making,Agile,
+IT Project Manager,Agile,Scrum,Kanban,Jira,MS Project,Leadership,Communication,Time management,Risk Management,
+Business Analyst,Requirements Gathering,Process Modeling,SQL,Data Analysis,Stakeholder Management,Analytical thinking,Communication,Collaboration,UML,
+Technical Support Specialist,Windows,Linux,Active Directory,Ticketing Systems,Remote Desktop,Customer focus,Problem-solving,Empathy,Scripting,
+QA Engineer,Selenium,JUnit,TestNG,Cypress,Postman,Attention to detail,Critical thinking,Teamwork,CI/CD,
+Scrum Master,Scrum,Agile,Jira,Confluence,Facilitation,Leadership,Communication,Conflict resolution,Coaching,
